@@ -21,5 +21,8 @@ public class Main {
         noc_object.readAtOnce(noc_file);
         System.out.println("Size is noc_regions : "  + noc_object.noc_Data.size());
 
+        OlympicsHostedPerNoc olympicsHostedPerNoc = new OlympicsHostedPerNoc();
+        olympicsHostedPerNoc.Outcome(athlete_object.athlete_Data,noc_object.noc_Data);
+
     }
 }
