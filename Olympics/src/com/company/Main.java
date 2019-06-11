@@ -16,5 +16,8 @@ public class Main {
         OlympicsHostedPerNoc olympicsHostedPerNoc = new OlympicsHostedPerNoc();
         olympicsHostedPerNoc.Outcome(athlete_object.athlete_Data);
 
+        MedalWinners medalWinners  = new MedalWinners();
+        medalWinners.getResults(athlete_object.athlete_Data);
+
     }
 }
