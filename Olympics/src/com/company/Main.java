@@ -1,12 +1,4 @@
 package com.company;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.*;
-import java.io.*;
-import java.nio.*;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -22,7 +14,7 @@ public class Main {
         System.out.println("Size is noc_regions : "  + noc_object.noc_Data.size());
 
         OlympicsHostedPerNoc olympicsHostedPerNoc = new OlympicsHostedPerNoc();
-        olympicsHostedPerNoc.Outcome(athlete_object.athlete_Data,noc_object.noc_Data);
+        olympicsHostedPerNoc.Outcome(athlete_object.athlete_Data);
 
     }
 }
