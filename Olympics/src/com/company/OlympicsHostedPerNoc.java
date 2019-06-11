@@ -1,6 +1,9 @@
 package com.company;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
 
 public class OlympicsHostedPerNoc {
     void Outcome(List<Athlete> athletes){
@@ -18,13 +21,17 @@ public class OlympicsHostedPerNoc {
             }
         }
 
-        Iterator<Map.Entry<String, HashSet<Integer>>> itr1 = results.entrySet().iterator();
+        /*Iterator<Map.Entry<String, HashSet<Integer>>> itr1 = results.entrySet().iterator();
         Iterator<Integer> itr2 = itr1.next().getValue().iterator();
         while (itr1.hasNext()) {
             System.out.println(itr1.next().getKey());
             while (itr2.hasNext()) {
                 System.out.println(itr2.next());
             }
+        }*/
+
+        for (Map.Entry<String, HashSet<Integer>> entry : results.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue().size());
         }
     }
 }
