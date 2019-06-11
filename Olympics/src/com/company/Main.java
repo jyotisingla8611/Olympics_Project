@@ -25,5 +25,8 @@ public class Main {
         DecadeParticipation decadeParticipation = new DecadeParticipation();
         decadeParticipation.getResults(athlete_object.athlete_Data);
 
+        TopMedalist topMedalist = new TopMedalist();
+        topMedalist.getResults(athlete_object.athlete_Data);
+
     }
 }

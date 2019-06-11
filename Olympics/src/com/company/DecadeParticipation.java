@@ -50,7 +50,7 @@ public class DecadeParticipation {
 
         System.out.println("Decade participation results as Ration of M:F is as : ");
         for(int i = 0 ; i < result.size() ; i++){
-            System.out.println(result.get(i).year + ":" + ((float)result.get(i).male/(float)result.get(i).female));
+            System.out.println(result.get(i).year + "  :  " + ((float)result.get(i).male/(float)result.get(i).female));
         }
     }
 }
