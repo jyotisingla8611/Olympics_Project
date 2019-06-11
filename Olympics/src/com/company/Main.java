@@ -22,5 +22,8 @@ public class Main {
         BoxingAverage boxingAverage = new BoxingAverage();
         boxingAverage.getResults(athlete_object.athlete_Data);
 
+        DecadeParticipation decadeParticipation = new DecadeParticipation();
+        decadeParticipation.getResults(athlete_object.athlete_Data);
+
     }
 }

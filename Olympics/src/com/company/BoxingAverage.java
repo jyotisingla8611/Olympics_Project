@@ -30,7 +30,7 @@ public class BoxingAverage {
             System.out.println("ArithmeticException occured!");
         }
 
-        System.out.println("The Summer Average is as : " + summerAverage);
-        System.out.println("The Winter Averaeg is as : " + winterAverage);
+        System.out.println("\nThe Summer Average is as : " + summerAverage);
+        System.out.println("The Winter Average is as : " + winterAverage + "\n");
     }
 }
