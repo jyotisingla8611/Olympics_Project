@@ -19,5 +19,8 @@ public class Main {
         MedalWinners medalWinners  = new MedalWinners();
         medalWinners.getResults(athlete_object.athlete_Data);
 
+        BoxingAverage boxingAverage = new BoxingAverage();
+        boxingAverage.getResults(athlete_object.athlete_Data);
+
     }
 }
