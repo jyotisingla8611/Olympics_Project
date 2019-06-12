@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a5ff281-8a73-4643-b663-1a618ba95812" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/athlete_events.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/Athlete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Olympics/com/company/Athlete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/BoxingAverage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Olympics/com/company/BoxingAverage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/DecadeParticipation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Olympics/com/company/DecadeParticipation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Olympics/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/MedalWinners.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Olympics/com/company/MedalWinners.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/Noc_regions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/OlympicsHostedPerNoc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Olympics/com/company/OlympicsHostedPerNoc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/TopMedalist$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Olympics/com/company/TopMedalist$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/TopMedalist.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Olympics/com/company/TopMedalist.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/com/company/yearRatio.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Olympics/noc_regions.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/athlete_events.csv" beforeDir="false" afterPath="$PROJECT_DIR$/athlete_events.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Athlete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Athlete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/BoxingAverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/BoxingAverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/DecadeParticipation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DecadeParticipation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MedalWinners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MedalWinners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Noc_regions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/NOCRegions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/OlympicsHostedPerNoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/OlympicsHostedPerNoc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/TopMedalist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/TopMedalist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/noc_regions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/noc_regions.csv" afterDir="false" />
-    </list>
+    <list default="true" id="4a5ff281-8a73-4643-b663-1a618ba95812" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,23 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Athlete.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="109" column="23" lean-forward="true" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/OlympicsHostedPerNoc.java">
+        <entry file="file://$PROJECT_DIR$/src/com/company/TopMedalist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -103,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="77" />
     <option name="y" value="47" />
     <option name="width" value="1279" />
@@ -212,7 +176,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23703113" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23703113" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -221,7 +185,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36482084" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36482084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -329,32 +293,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/TopMedalist.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="e#173#190#0" expanded="true" />
-            <element signature="e#250#267#0" expanded="true" />
-            <element signature="e#320#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/MedalWinners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="238">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/OlympicsHostedPerNoc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="198">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MedalWinners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -368,13 +330,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/OlympicsHostedPerNoc.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/TopMedalist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
