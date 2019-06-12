@@ -1,32 +1,103 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 class Athlete{
 
-    List<Athlete> athlete_Data = new ArrayList<>();
+    public static final int ID = 0;
+    public static final int NAME = 1;
+    public static final int SEX = 2;
+    public static final int AGE = 3;
+    public static final int HEIGHT = 4;
+    public static final int WEIGHT = 5;
+    public static final int TEAM = 6;
+    public static final int NOC = 7;
+    public static final int GAME = 8;
+    public static final int YEAR = 9;
+    public static final int SEASON = 10;
+    public static final int CITY = 11;
+    public static final int SPORT = 12;
+    public static final int EVENT = 13;
+    public static final int MEDAL = 14;
 
-    int id;
-    String name;
-    String sex;
-    int age;
-    int height;
-    double weight;
-    String team;
-    String noc;
-    String game;
-    int year;
-    String season;
-    String city;
-    String sport;
-    String event;
-    String medal;
+    private static List<Athlete> athletes = new ArrayList<>();
+
+    private int id;
+    private String name;
+    private String sex;
+    private int age;
+    private int height;
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public String getNoc() {
+        return noc;
+    }
+
+    public String getGame() {
+        return game;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getSeason() {
+        return season;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public String getSport() {
+        return sport;
+    }
+
+    public String getEvent() {
+        return event;
+    }
+
+    public String getMedal() {
+        return medal;
+    }
+
+    private double weight;
+    private String team;
+    private String noc;
+    private String game;
+    private int year;
+    private String season;
+    private String city;
+    private String sport;
+    private String event;
+    private String medal;
 
     Athlete(){
 
@@ -51,58 +122,7 @@ class Athlete{
         this.medal = medal;
     }
 
-    public void readAtOnce(String file)
-    {
-
-        try (BufferedReader bufferreader = Files.newBufferedReader(Paths.get(file), StandardCharsets.US_ASCII)) {
-
-            String line = bufferreader.readLine();
-            line = bufferreader.readLine();
-            while (line != null) {
-
-                //(,(?=[^\\)]*(?:\\(|$)))  we can also try to splitt it with this
-                String[] attributes = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
-                for(int i = 0 ;i < attributes.length ; i++){
-                    attributes[i] = attributes[i].replace("\"", "");
-                }
-                Athlete athlete = createAthlete(attributes);
-                athlete_Data.add(athlete);
-                line = bufferreader.readLine();
-            }
-
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-        }
+    public static List<Athlete> getAthletes() {
+        return athletes;
     }
-
-    static boolean isNA(String str){
-        boolean ans = str.equals("NA");
-        return ans;
-    }
-
-    private static Athlete createAthlete(String[] data) {
-
-        int id = Integer.parseInt(data[0]);
-        String name = data[1];
-        String sex = data[2];
-        boolean ag = isNA(data[3]);
-        int age = ag ? -1 : Integer.parseInt(data[3]);
-        boolean hgt = isNA(data[4]);
-        int height = hgt ? -1 : Integer.parseInt(data[4]);
-        boolean wt = isNA(data[5]);
-        double weight =  wt ? -1 : Double.parseDouble(data[5]);;
-        String team = data[6];
-        String noc = data[7];
-        String game = data[8];
-        boolean yr = isNA(data[9]);
-        int year = yr ? -1 : Integer.parseInt(data[9]);
-        String season = data[10];
-        String city = data[11];
-        String sport = data[12];
-        String event = data[13];
-        String medal = data[14];
-
-        return (new Athlete(id,name,sex,age,height,weight,team,noc,game,year,season,city,sport,event,medal));
-    }
-
 }

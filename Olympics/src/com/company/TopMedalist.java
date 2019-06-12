@@ -3,17 +3,20 @@ package com.company;
 import java.util.*;
 
 public class TopMedalist {
-    HashMap<String,Integer>gold = new HashMap<String, Integer>();
-    HashMap<String,Integer>silver = new HashMap<String, Integer>();
-    HashMap<String,Integer>bronze = new HashMap<String, Integer>();
+    public static final String MEDAL_SILVER = "Silver";
+    public static final String MEDAL_BRONZE = "Bronze";
+    public static final String MEDAL_GOLD = "Gold";
+    public static final String NA = "NA";
+    static HashMap<String, Integer> gold = new HashMap<String, Integer>();
+    static HashMap<String, Integer> silver = new HashMap<String, Integer>();
+    static  HashMap<String, Integer> bronze = new HashMap<String, Integer>();
 
-    public void getResults(List<Athlete> athlete_data) {
-
+    public static void getResults(List<Athlete> athlete_data) {
         for (int i = 0; i < athlete_data.size(); i++) {
-            if(athlete_data.get(i).year > 2000 && athlete_data.get(i).medal.equals("NA") == false) {
-                if (athlete_data.get(i).medal.equals("Silver")) {
+            if(athlete_data.get(i).getYear() > 2000 && athlete_data.get(i).getMedal().equals(NA) == false) {
+                if (athlete_data.get(i).getMedal().equals(MEDAL_SILVER)) {
                     AddValue(silver,athlete_data.get(i));
-                } else if (athlete_data.get(i).medal.equals("Bronze")) {
+                } else if (athlete_data.get(i).getMedal().equals(MEDAL_BRONZE)) {
                     AddValue(bronze, athlete_data.get(i));
                 } else {
                     AddValue(gold, athlete_data.get(i));
@@ -23,16 +26,15 @@ public class TopMedalist {
         print();
     }
 
-    private void AddValue(HashMap<String, Integer> temp, Athlete athlete) {
-        if(temp.containsKey(athlete.noc)) {
-            temp.put(athlete.noc,temp.get(athlete.noc)+1);
+    private static void AddValue(HashMap<String, Integer> temp, Athlete athlete) {
+        if(temp.containsKey(athlete.getNoc())) {
+            temp.put(athlete.getNoc(),temp.get(athlete.getNoc())+1);
         } else {
-            temp.put(athlete.noc,1);
+            temp.put(athlete.getNoc(),1);
         }
     }
 
-    public static HashMap<String, Integer> sortByValue(HashMap<String, Integer> hm)
-    {
+    public static HashMap<String, Integer> sortByValue(HashMap<String, Integer> hm) {
         List<Map.Entry<String, Integer> > list =
                 new LinkedList<Map.Entry<String, Integer> >(hm.entrySet());
 
@@ -49,7 +51,7 @@ public class TopMedalist {
         return temp;
     }
 
-    void print() {
+    static void print() {
         System.out.println("\nTop 10 Gold medalist Countries Are : ");
         HashMap<String,Integer>goldVal = sortByValue(gold);
         int count = 0;
