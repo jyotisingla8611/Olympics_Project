@@ -9,13 +9,13 @@ public class TopMedalist {
 
     public void getResults(List<Athlete> athlete_data) {
 
-        for(int i = 0 ; i < athlete_data.size() ;i++){
-            if(athlete_data.get(i).year > 2000 && athlete_data.get(i).medal.equals("NA") == false){
-                if (athlete_data.get(i).medal.equals("Silver")){
+        for (int i = 0; i < athlete_data.size(); i++) {
+            if(athlete_data.get(i).year > 2000 && athlete_data.get(i).medal.equals("NA") == false) {
+                if (athlete_data.get(i).medal.equals("Silver")) {
                     AddValue(silver,athlete_data.get(i));
-                }else if(athlete_data.get(i).medal.equals("Bronze")){
+                } else if (athlete_data.get(i).medal.equals("Bronze")) {
                     AddValue(bronze, athlete_data.get(i));
-                }else{
+                } else {
                     AddValue(gold, athlete_data.get(i));
                 }
             }
@@ -26,7 +26,7 @@ public class TopMedalist {
     private void AddValue(HashMap<String, Integer> temp, Athlete athlete) {
         if(temp.containsKey(athlete.noc)) {
             temp.put(athlete.noc,temp.get(athlete.noc)+1);
-        }else {
+        } else {
             temp.put(athlete.noc,1);
         }
     }
@@ -37,9 +37,7 @@ public class TopMedalist {
                 new LinkedList<Map.Entry<String, Integer> >(hm.entrySet());
 
         Collections.sort(list, new Comparator<Map.Entry<String, Integer> >() {
-            public int compare(Map.Entry<String, Integer> o1,
-                               Map.Entry<String, Integer> o2)
-            {
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
                 return (o2.getValue()).compareTo(o1.getValue());
             }
         });
@@ -51,7 +49,7 @@ public class TopMedalist {
         return temp;
     }
 
-    void print(){
+    void print() {
         System.out.println("\nTop 10 Gold medalist Countries Are : ");
         HashMap<String,Integer>goldVal = sortByValue(gold);
         int count = 0;

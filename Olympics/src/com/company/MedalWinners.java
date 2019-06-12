@@ -1,19 +1,21 @@
 package com.company;
 //119 7
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class MedalWinners {
-    ArrayList<String>summerList = new ArrayList<>();
-    ArrayList<String>winterList = new ArrayList<>();
+    
+    ArrayList<String> summerList = new ArrayList<>();
+    ArrayList<String> winterList = new ArrayList<>();
 
-    void getResults(List<Athlete>athletes){
-        for(int i = 0 ; i < athletes.size() ; i++){
-            if( athletes.get(i).noc.equals("IND") && !athletes.get(i).medal.equals("NA")) {
-                if (athletes.get(i).season.equals("Summer")) {
-                    summerList.add(athletes.get(i).name);
+    void getResults(List<Athlete> athleteData) {
+        for (int i = 0; i < athleteData.size(); i++) {
+            if (athleteData.get(i).noc.equals("IND") && !athleteData.get(i).medal.equals("NA")) {
+                if (athleteData.get(i).season.equals("Summer")) {
+                    summerList.add(athleteData.get(i).name);
                 } else {
-                    winterList.add(athletes.get(i).name);
+                    winterList.add(athleteData.get(i).name);
                 }
             }
         }

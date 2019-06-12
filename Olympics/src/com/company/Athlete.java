@@ -31,6 +31,7 @@ class Athlete{
     Athlete(){
 
     }
+
     Athlete(int id,String name,String sex,int age,int height,double weight,String team,String noc,String game,
             int year,String season,String city, String sport,String event,String medal){
         this.id = id;
@@ -49,25 +50,19 @@ class Athlete{
         this.event = event;
         this.medal = medal;
     }
+
     public void readAtOnce(String file)
     {
-       /* FileReader filereader = null;
-        try {
-            filereader = new FileReader(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }*/
 
-
-        // BufferedReader bufferreader = new BufferedReader(filereader);
         try (BufferedReader bufferreader = Files.newBufferedReader(Paths.get(file), StandardCharsets.US_ASCII)) {
 
             String line = bufferreader.readLine();
             line = bufferreader.readLine();
             while (line != null) {
+
+                //(,(?=[^\\)]*(?:\\(|$)))  we can also try to splitt it with this
                 String[] attributes = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
                 for(int i = 0 ;i < attributes.length ; i++){
-                    //attributes[i] = attributes[i].substring(1, attributes[i].length()-1);
                     attributes[i] = attributes[i].replace("\"", "");
                 }
                 Athlete athlete = createAthlete(attributes);
@@ -79,21 +74,14 @@ class Athlete{
             ioe.printStackTrace();
         }
     }
+
     static boolean isNA(String str){
         boolean ans = str.equals("NA");
         return ans;
     }
-    /* static void isString(String[] data){
-         try{
-             if(!(data[3].equals("NA"))){
-                 int i =Integer.parseInt(data[3]);
-             }
-         }catch (NumberFormatException e){
-             e.printStackTrace();
-         }
-     }*/
+
     private static Athlete createAthlete(String[] data) {
-        // isString(data);
+
         int id = Integer.parseInt(data[0]);
         String name = data[1];
         String sex = data[2];
