@@ -34,7 +34,7 @@ public class OlympicsHostedPerNoc {
              }
          */
 
-       
+
         for (Map.Entry<String, HashSet<Integer>> entry : results.entrySet()) {
             System.out.println(entry.getKey() + " : " + entry.getValue().size());
         }
